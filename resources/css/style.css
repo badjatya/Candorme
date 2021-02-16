@@ -137,6 +137,10 @@ section .heading p {
   background: #8343ff;
 }
 
+.btn-secondary:hover {
+  background: #7230f7;
+}
+
 .header-img-container {
   max-width: 15%;
   margin-left: 70px;
@@ -185,10 +189,70 @@ section .heading p {
 
 /* SECTION AGENCY ENDS  */
 
+/* SECTION Candor Img Starts  */
+
 .section-candor--img {
+  padding-bottom: 0;
   padding: 5%;
 }
 
 .section-candor--img img {
   width: 100%;
 }
+/* SECTION Candor Img ENDS  */
+
+/* SECTION Services Starts  */
+
+.section-services {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.section-services .heading p {
+  color: white;
+}
+
+.section-services .services-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section-services .card {
+  width: 20%;
+  padding: 3rem 1.5rem;
+  background-color: #071b50;
+}
+
+.section-services .card .icon {
+  margin-bottom: 25px;
+}
+
+.section-services .card h4 {
+  margin-bottom: 20px;
+}
+
+.section-services .card p {
+  margin-bottom: 25px;
+  line-height: 26px;
+}
+
+.section-services .card a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.section-services .card a:hover {
+  color: white;
+}
+
+.section-services .card .icon i {
+  color: var(--primary-color);
+}
+
+.section-services .card .service-hover:hover {
+  color: var(--primary-color);
+}
+
+/* SECTION Services ENDS  */
