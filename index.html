@@ -7,6 +7,70 @@
     <title>Candor - Web Better Net More</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./resources/css/style.css">
+
+
+    <!-- LOAD JQUERY LIBRARY -->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+			
+			<!-- LOADING FONTS AND ICONS -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400%2C300%7CMontserrat:600" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<link rel="stylesheet" type="text/css" href="./resources/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="./resources/fonts/font-awesome/css/font-awesome.css">
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="./resources/css/rs6.css">
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			<script type="text/javascript" src="./resources/js/rbtools.min.js"></script>
+			<script type="text/javascript" src="./resources/js/rs6.min.js"></script>
+			
+			<script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}				
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					document.getElementById(e.c).height = newh+"px";
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script>
 </head>
 <body>
     
@@ -48,50 +112,715 @@
     <!-- HEADER ENDS  -->
 
     <!-- SECTION AGENCY STARTS  -->
-    <section class="section-agency">
-        <div class="heading">
-            <h2>Meet The New Agency SEO 
-                Template From The Candor Team</h2>
-    
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                accusantium doloremque laudantium.</p>
-        </div>
+    <!-- START Home REVOLUTION SLIDER 6.3.9 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_12_1_wrapper" data-alias="slider-4-1" data-source="gallery" style="background:transparent;padding:0;">
+				<rs-module id="rev_slider_12_1" style="" data-version="6.3.9">
+					<rs-slides>
+						<rs-slide data-key="rs-38" data-title="first" data-anim="ei:d;eo:d;s:1000ms;r:default;t:parallaxvertical;sl:d;">
+							<img src="./resources/img/h/filtration-overlay.png" title="filtration overlay" width="1920" height="1079" data-parallax="off" class="rev-slidebg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-12-slide-38-layer-25" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:120px,120px,120px,-40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:next;'
+								data-frame_999="o:0;st:w;"
+								style="z-index:16;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
 
-        <div class="row">
-            <div class="agency-cards">
-                <!-- Card Start  -->
-                <div class="card">
-                    <div class="agency-hover">
-                        <div class="icon"><i class="fontawesome-icon fa-road fas circle-yes fa-2x"></i></div>
-                        <h4>Establish Goals</h4>
-                    </div>
-                    <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi.</p>
-                </div>
-                <!-- Card End  -->
-    
-                <!-- Card Start  -->
-                <div class="card">
-                    <div class="agency-hover">
-                        <div class="icon"><i class="fontawesome-icon fa-video fas circle-yes fa-2x"></i></div>
-                        <h4>Establish Goals</h4>
-                    </div>
-                    <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi.</p>
-                </div>
-                <!-- Card End  -->
-    
-                <!-- Card Start  -->
-                <div class="card">
-                    <div class="agency-hover">
-                        <div class="icon"><i class="fontawesome-icon fa-tint fas circle-yes fa-2x"></i></div>
-                        <h4>Establish Goals</h4>
-                    </div>
-                    <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi.</p>
-                </div>
-                <!-- Card End  -->
-    
-            </div>
-        </div>
-    </section>
+							--><rs-layer
+								id="slider-12-slide-38-layer-26" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:previous;'
+								data-btrans="rZ:180;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:17;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-38-layer-27" 
+								class="rev-btn"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,0;yo:630px,630px,630px,520px;"
+								data-text="w:normal;s:30,30,30,20;l:55,55,55,41;fw:300;a:center;"
+								data-dim="w:246px,246px,246px,188px;h:62px,62px,62px,47px;"
+								data-padding="t:5,5,5,2;r:20,20,20,15;b:20,20,20,15;l:20,20,20,15;"
+								data-border="bor:5px,5px,5px,5px;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_999="o:0;st:w;"
+								data-frame_hover="bgc:#007aff;bor:5px,5px,5px,5px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:18;background-color:#007aff;font-family:Roboto;"
+							>Contact Us
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-38-layer-28" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:260px,260px,260px,100px;"
+								data-text="w:normal;s:100,100,100,50;l:75,75,75,19;fw:600;"
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:15;font-family:Montserrat;text-transform:uppercase;"
+							>Filtration 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-38-layer-29" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:370px,370px,370px,180px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-39;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:14;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Separation 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-38-layer-30" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:480px,480px,480px,260px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-36;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:13;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Purification 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-38-layer-31" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:590px,590px,590px,340px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-35;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sR:8700;"
+								style="z-index:12;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>disinfection 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-38-layer-38" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:700px,700px,700px,420px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-37;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:11;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>pumping 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide data-key="rs-39" data-title="second" data-anim="ei:d;eo:d;s:1000ms;r:default;t:parallaxvertical;sl:d;">
+							<img src="./resources/img/h/sepration-overlay.png" title="sepration overlay" width="1920" height="1280" data-parallax="off" class="rev-slidebg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-12-slide-39-layer-18" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:120px,120px,120px,-40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:next;'
+								data-frame_999="o:0;st:w;"
+								style="z-index:16;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-39-layer-19" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:previous;'
+								data-btrans="rZ:180;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:17;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-39-layer-48" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:120px,120px,120px,-40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:next;'
+								data-frame_999="o:0;st:w;"
+								style="z-index:16;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-39-layer-49" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:previous;'
+								data-btrans="rZ:180;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:17;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-39-layer-50" 
+								class="rev-btn"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,0;yo:630px,630px,630px,520px;"
+								data-text="w:normal;s:30,30,30,20;l:55,55,55,41;fw:300;a:center;"
+								data-dim="w:246px,246px,246px,188px;h:62px,62px,62px,47px;"
+								data-padding="t:5,5,5,2;r:20,20,20,15;b:20,20,20,15;l:20,20,20,15;"
+								data-border="bor:5px,5px,5px,5px;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_999="o:0;st:w;"
+								data-frame_hover="bgc:#007aff;bor:5px,5px,5px,5px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:18;background-color:#007aff;font-family:Roboto;"
+							>Contact Us 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-39-layer-51" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:260px,260px,260px,100px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-38;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:16;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>FIltration 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-39-layer-52" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:370px,370px,370px,180px;"
+								data-text="w:normal;s:100,100,100,50;l:75,75,75,19;fw:600;"
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:15;font-family:Montserrat;text-transform:uppercase;"
+							>Separation 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-39-layer-53" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:480px,480px,480px,260px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-36;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:14;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Purification 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-39-layer-54" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:590px,590px,590px,340px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-35;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:13;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>disinfection 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-39-layer-55" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:700px,700px,700px,420px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-37;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:12;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>pumping 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide data-key="rs-36" data-title="third" data-anim="ei:d;eo:d;s:1000ms;r:default;t:parallaxvertical;sl:d;">
+							<img src="./resources/img/h/purification-overlay.png" title="purification overlay" width="1920" height="1280" data-parallax="off" class="rev-slidebg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-12-slide-36-layer-7" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:260px,260px,260px,80px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-first;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:16;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Filtration 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-36-layer-8" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:370px,370px,370px,160px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-39;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:15;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Separation 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-36-layer-9" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:480px,480px,480px,260px;"
+								data-text="w:normal;s:100,100,100,50;l:75,75,75,19;fw:600;"
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:14;font-family:Montserrat;text-transform:uppercase;"
+							>Purification 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-36-layer-10" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:590px,590px,590px,340px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-35;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:13;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>disinfection 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-36-layer-11" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:120px,120px,120px,-40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:next;'
+								data-frame_999="o:0;st:w;"
+								style="z-index:16;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-36-layer-12" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:previous;'
+								data-btrans="rZ:180;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:17;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-36-layer-13" 
+								class="rev-btn"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,0;yo:630px,630px,630px,520px;"
+								data-text="w:normal;s:30,30,30,20;l:55,55,55,41;fw:300;a:center;"
+								data-dim="w:246px,246px,246px,188px;h:62px,62px,62px,47px;"
+								data-padding="t:5,5,5,2;r:20,20,20,15;b:20,20,20,15;l:20,20,20,15;"
+								data-border="bor:5px,5px,5px,5px;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_999="o:0;st:w;"
+								data-frame_hover="bgc:#007aff;bor:5px,5px,5px,5px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:18;background-color:#007aff;font-family:Roboto;"
+							>Contact Us 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-36-layer-35" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:700px,700px,700px,420px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-37;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:12;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>pumping 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide data-key="rs-35" data-title="forth" data-anim="ei:d;eo:d;s:1000ms;r:default;t:parallaxvertical;sl:d;">
+							<img src="./resources/img/h/disinfection-overlay.png" title="disinfection overlay" width="1920" height="1079" data-parallax="off" class="rev-slidebg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-12-slide-35-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:120px,120px,120px,-40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:next;'
+								data-frame_999="o:0;st:w;"
+								style="z-index:16;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-35-layer-5" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:previous;'
+								data-btrans="rZ:180;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:17;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-35-layer-6" 
+								class="rev-btn"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,0;yo:630px,630px,630px,520px;"
+								data-text="w:normal;s:30,30,30,20;l:55,55,55,41;fw:300;a:center;"
+								data-dim="w:246px,246px,246px,188px;h:62px,62px,62px,47px;"
+								data-padding="t:5,5,5,2;r:20,20,20,15;b:20,20,20,15;l:20,20,20,15;"
+								data-border="bor:5px,5px,5px,5px;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_999="o:0;st:w;"
+								data-frame_hover="bgc:#007aff;bor:5px,5px,5px,5px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:18;background-color:#007aff;font-family:Roboto;"
+							>Contact Us 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-35-layer-14" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:260px,260px,260px,100px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-38;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:16;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Filtration 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-35-layer-15" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:370px,370px,370px,180px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-39;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:15;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Separation 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-35-layer-16" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:480px,480px,480px,260px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-36;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:14;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Purification 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-35-layer-17" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:590px,590px,590px,340px;"
+								data-text="w:normal;s:100,100,100,50;l:75,75,75,19;fw:600;"
+								data-actions='o:click;a:jumptoslide;slide:rs-;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:13;font-family:Montserrat;text-transform:uppercase;"
+							>disinfection 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-35-layer-36" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:700px,700px,700px,420px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-37;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:12;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>pumping 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide data-key="rs-37" data-title="fifth" data-anim="ei:d;eo:d;s:1000ms;r:default;t:parallaxvertical;sl:d;">
+							<img src="./resources/img/h/puming-overlay.png" title="puming overlay" width="1920" height="1276" data-parallax="off" class="rev-slidebg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-12-slide-37-layer-21" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:260px,260px,260px,100px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-38;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:16;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Filtration 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-37-layer-22" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:370px,370px,370px,180px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-39;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:15;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Separation 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-37-layer-23" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:480px,480px,480px,260px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-36;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:14;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>Purification 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-37-layer-24" 
+								data-type="text"
+								data-color="rgba(255, 255, 255, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:590px,590px,590px,340px;"
+								data-text="w:normal;s:50,50,50,25;l:75,75,75,19;fw:600;"
+								data-tst="c:rgba(255, 255, 255, 0.7);"
+								data-actions='o:click;a:jumptoslide;slide:rs-35;'
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:13;font-family:Montserrat;text-transform:uppercase;cursor:pointer;"
+							>disinfection 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-37-layer-37" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="xo:0,0,0,30px;yo:700px,700px,700px,420px;"
+								data-text="w:normal;s:100,100,100,50;l:75,75,75,19;fw:600;"
+								data-frame_0="o:1;"
+								data-frame_999="o:1;st:w;sp:50;sR:8700;"
+								style="z-index:12;font-family:Montserrat;text-transform:uppercase;"
+							>pumping 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-37-layer-45" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:previous;'
+								data-btrans="rZ:180;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:17;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-37-layer-46" 
+								class="rev-btn"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:33px,33px,33px,0;yo:630px,630px,630px,520px;"
+								data-text="w:normal;s:30,30,30,20;l:55,55,55,41;fw:300;a:center;"
+								data-dim="w:246px,246px,246px,188px;h:62px,62px,62px,47px;"
+								data-padding="t:5,5,5,2;r:20,20,20,15;b:20,20,20,15;l:20,20,20,15;"
+								data-border="bor:5px,5px,5px,5px;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_999="o:0;st:w;"
+								data-frame_hover="bgc:#007aff;bor:5px,5px,5px,5px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:18;background-color:#007aff;font-family:Roboto;"
+							>Contact Us
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-12-slide-37-layer-47" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:r,r,r,c;xo:120px,120px,120px,-40px;yo:725px,725px,725px,580px;"
+								data-text="w:normal;s:20,20,20,4;l:0,0,0,6;"
+								data-dim="w:64px,64px,64px,50px;h:64px,64px,64px,50px;"
+								data-actions='o:click;a:jumptoslide;slide:next;'
+								data-frame_999="o:0;st:w;"
+								style="z-index:16;"
+							><img src="./resources/img/h/icons8-up-64-1.png" width="64" height="64" data-no-retina> 
+							</rs-layer><!--
+-->						</rs-slide>
+					</rs-slides>
+					<rs-static-layers><!--
+					--></rs-static-layers>
+				</rs-module>
+		<script type="text/javascript">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {
+			function revslider_showDoubleJqueryError(sliderID) {
+				var err = "<div class='rs_error_message_box'>";
+				err += "<div class='rs_error_message_oops'>Oops...</div>";
+				err += "<div class='rs_error_message_content'>";
+				err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+				err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+				err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+				err += "</div>";
+			err += "</div>";
+				var slider = document.getElementById(sliderID); slider.innerHTML = err; slider.style.display = "block";
+			}
+		}
+		</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script type="text/javascript">
+					
+					var	revapi12,
+						tpj;
+					function revinit_revslider121() {
+					jQuery(function() {
+						tpj = jQuery;
+						revapi12 = tpj("#rev_slider_12_1");
+						if(revapi12==undefined || revapi12.revolution == undefined){
+							revslider_showDoubleJqueryError("rev_slider_12_1");
+						}else{
+							revapi12.revolution({
+								sliderLayout:"fullscreen",
+								visibilityLevels:"1240,1240,1240,480",
+								gridwidth:"1800,1800,1800,480",
+								gridheight:"900,900,900,730",
+								perspective:600,
+								perspectiveType:"global",
+								editorheight:"900,768,565,730",
+								responsiveLevels:"1240,1240,1240,480",
+								stopAtSlide:1,
+								stopAfterLoops:0,
+								stopLoop:true,
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									keyboardNavigation:true,
+									mouseScrollNavigation:"carousel",
+									wheelViewPort:10,
+									wheelCallDelay:-1000,
+									onHoverStop:false,
+									touch: {
+										touchenabled:true,
+										swipe_threshold:20
+									}
+								},
+								parallax: {
+									levels:[5,10,5,5,15,20,15,15,20,10,25,10,15,10,20,1],
+									type:"3D",
+									origo:"slidercenter",
+									speed:"5000ms",
+									ddd_overflow:"hidden",
+									ddd_layer_overflow:true,
+									ddd_z_correction:1
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+							});
+						}
+						
+					});
+					} // End of RevInitScript
+				var once_revslider121 = false;
+				if (document.readyState === "loading") {document.addEventListener('readystatechange',function() { if((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider121 ) { once_revslider121 = true; revinit_revslider121();}});} else {once_revslider121 = true; revinit_revslider121();}
+				</script>
     <!-- SECTION AGENCY ENDS  -->
 
 
